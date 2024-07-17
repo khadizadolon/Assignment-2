@@ -1,0 +1,118 @@
+@import url('https://fonts.cdnfonts.com/css/miama');
+
+                                                
+
+
+body{
+    background-color: black;
+}
+header{
+    max-width: 1060px;
+    margin: 0 auto;
+}
+
+/* shared related style */
+
+.color-code{
+    color: #E6533C;
+}
+
+/* navbar related styles */
+
+.nav-title{
+    font-size: 2.25rem;
+    font-weight:800;
+
+}
+.nav-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-btn{
+    display: flex;
+    align-items: center;
+    gap: 47px;
+    border: 1px solid #222222;
+    border-radius: 39px;
+    height: 46px;
+}
+.home-btn{
+    padding: 8px 20px;
+    border-radius: 46px;
+    background-color:#E6533C ;
+    font-size: 1.125rem;
+    border: none;
+    margin-left: 5px;
+}
+.btn{
+    padding: 8px 20px;
+    border-radius: 46px;
+    background-color: transparent;
+    color: white;
+    border: none;
+    font-size: 1.125rem;
+}
+/* banner related styles */
+
+.banner-section{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+.banner-details{
+    width: 50%;
+}
+.banner-title{
+    color: white;
+    font-size: 4.75rem;
+    margin-bottom: 28px;
+    line-height: 120%;
+}
+.banner-description{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 1rem;
+    line-height: 24px;
+    margin-bottom: 28px;
+}
+.primary-btn{
+    color: white;
+    background-color: #E6533C;
+    padding: 16px 46px;
+    border-radius: 42px;
+    border: none;
+}
+.banner-btn{
+    color: white;
+    border-radius:42px ;
+    background-color: transparent;
+    padding: 16px 46px;
+    border: 1px solid;
+}
+.banner-img{
+    width: 35%;
+    border: 2px solid white;
+}
+#banner-card-1{
+    width: 200px;
+    height: 90px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    border:2px solid white;
+    position: absolute;
+    top: 140px;
+    right: 40px;
+
+}
+#banner-card-2{
+    width: 190px;
+    height: 95px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 12px;
+    border:2px solid white;
+    position: absolute;
+    bottom: 60px;
+    right: 350px;
+
+
+}
