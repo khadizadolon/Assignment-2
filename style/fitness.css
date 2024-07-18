@@ -2,13 +2,15 @@
 
                                                 
 
-
 body{
     background-color: black;
 }
 header{
     max-width: 1060px;
     margin: 0 auto;
+}
+main section{
+    max-width: 1040px;
 }
 
 /* shared related style */
@@ -115,4 +117,68 @@ header{
     right: 350px;
 
 
+}
+/* habit related styles  */
+.habit-section{
+    margin: 0 auto;
+    margin-top: 100px;
+}
+.habit-container{
+    text-align: center;
+}
+.habit-cards-group{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+.habit-details{
+    width: 470px;
+    margin: 0 auto;
+}
+.habit-title{
+    color: white;
+    font-size: 3rem;
+    line-height: 120%;
+}
+.habit-description{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: .875rem;
+    line-height: 24px;
+}
+.habit-card{
+    width: 230px;
+}
+.habit-img{
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+}
+.card-title{
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: white;
+    
+}
+.card-para{
+    color: rgba(255, 255, 255, 0.5);
+    width: 230px;
+    font-size: .875rem;
+    line-height: 18px;
+    margin-top: 6px;
+
+}
+/* responsive media query */
+@media screen and (max-width:576px){
+        .habit-cards-group{
+            flex-direction: column;
+        }
+        .habit-container{
+            margin-left: 50px;
+        }
+        .habit-cards-group{
+            /* margin-left: 50px; */
+        }
+
+    
 }
