@@ -1,6 +1,18 @@
 @import url('https://fonts.cdnfonts.com/css/miama');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
-                                                
+.inter-font {
+  font-family: "Inter";
+  font-optical-sizing: auto;
+  /* font-weight: 600; */
+  font-style: normal;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}                                                
 
 body{
     background-color: black;
@@ -19,6 +31,10 @@ main section{
     color: #E6533C;
 }
 
+.description-color{
+    color: rgba(255, 255, 255, 0.5);
+}
+
 /* navbar related styles */
 
 .nav-title{
@@ -30,6 +46,8 @@ main section{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: 60px;
+    margin-bottom: 32px;
 }
 .nav-btn{
     display: flex;
@@ -64,6 +82,7 @@ main section{
 }
 .banner-details{
     width: 50%;
+    padding-top: 60px;
 }
 .banner-title{
     color: white;
@@ -104,8 +123,8 @@ main section{
     position: absolute;
     top: 140px;
     right: 40px;
+}   
 
-}
 #banner-card-2{
     width: 190px;
     height: 95px;
@@ -115,8 +134,6 @@ main section{
     position: absolute;
     bottom: 60px;
     right: 350px;
-
-
 }
 /* habit related styles  */
 .habit-section{
@@ -133,7 +150,7 @@ main section{
     gap: 40px;
 }
 .habit-details{
-    width: 670px;
+    /* width: 670px; */
     margin: 0 auto;
 }
 .habit-title{
@@ -222,42 +239,234 @@ main section{
    border-radius: 18px;
 
 }
+/* Calculator related styles */
+.calculator-heading{
+    width: 670px;
+    margin: 0 auto;
+    margin-top: 90px;
+}
+.table{
+    /* width: 400px; */
+    /* height: 300px; */
+    margin-top: 52px;
+}
+table{
+    border-collapse: collapse;
+    width: 310px;
+    height: 216px;
+    margin-top: 52px;
+}
+th, td{
+    border:1px solid  rgba(255, 255, 255, 0.1);
+}
+th{
+    text-align: start;
+    padding: 15px 19px;
+    color: #FFFFFF;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 120%;
+}
+td{
+    padding-left: 20px;
+    color: rgba(82, 82, 82, 1);
+    text-align: start;
+    font-size: 0.875rem;
+    line-height: 120%;
+}
+.calculator-section{
+    max-width: none;
+   
+}
+.calculator-title{
+  font-size: 1.75rem;
+  color: #FFFFFF;
+  line-height: 120%;
+  margin-bottom: 14px;
+}
+.calculator-container{
+   display: flex;
+   margin: 0 auto;
+   justify-content: center;
+   gap: 175px;
+   
+}
+.form{
+    /* width: 580px; */
+    /* border: 2px solid thistle; */
+    margin:50px;
+}
+.form-items{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    margin-top: 34px;
+}
+#form-item-5{
+    grid-column: span 2;
+    padding: 13px 20px;
+    border-radius: 8px;
+    color:  rgba(255, 255, 255, 0.6);
+    /* color: rgba(56, 56, 56, 1); */
+    background-color: rgba(255, 255, 255, 0.1);
+    border: none;
+    font-size: 1rem;
+    line-height: 22px;
+    width: 92.5%;
+}
+.item-1{
+    padding: 13px 20px;
+    border-radius: 8px;
+    color: rgba(255, 255, 255, 0.6);
+    background-color: rgba(255, 255, 255, 0.1);
+    border: none;
+    font-size: 1rem;
+    line-height: 22px;
+    width: 85%;
+}
+
+/* our team related styles */
+.team{
+    margin: 0 auto;
+    margin-top: 90px;
+}
+
+.team-container{
+    border: 2px solid red;
+    
+}
+.team-details{
+    text-align: center;
+}
+.team-photos{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+}
+.team-pic-1{
+    width: 322px;
+    height: 272px;
+   
+}
+.team-title{
+    color:#FFFFFF;
+    font-size: 1.25rem;
+    line-height: 120%;
+    
+}
+.tainer-name{
+    /* height: 20%; */
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+/* footer related styles */
+.footer-section{
+    background-color: #222222;
+    margin-top: 90px;
+    /* height: 490px; */
+    padding-top: 66px;
+    
+}
+.footer-container{
+    max-width: 1060px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-bottom: 60px;
+}
+.brand{
+    font-size: 4.375rem;
+    font-weight: 800;
+    line-height: 120%;
+    margin-bottom: 20px;
+}
+.foot-descrip{
+    font-size: 0.875rem;
+    line-height: 24px;
+}
+.footer-title{
+    color: #FFFFFF;
+    margin-bottom: 30px;
+    font-family: "Inter";
+    font-weight: 600;
+    font-size: 2rem;
+    line-height: 120%;
+}
+.footer-para{
+    text-align: center;
+    font-size: 1.25rem;
+    margin-top: 36px;
+    padding-bottom: 36px;
+}
+.footer-list{
+    margin-bottom: 20px;
+}
 /* responsive media query */
 @media screen and (max-width:576px){
-        .habit-cards-group{
-            flex-direction: column;
-        }
-        .habit-container{
-            margin-left: auto;
-            margin-right: auto;
-        }
-       .habit-title{
 
-       }
-       .habit-description{
-        
-       }
+    .nav-container{
+        flex-direction: column;
+    }
+    .banner-section{
+        flex-direction: column;
+    }
+    .habit-cards-group{
+        flex-direction: column;
+            /* align-items: center; */
+            /* margin: 0 auto; */
+    }
+       
+    .habit-title{
+        text-align: center;
+    }
+    .habit-description{
+        width: 318px;
+        margin-left: auto;
+        margin-right: auto;
+    }
 
-        .run-container{
-            flex-direction: column;
-        }
-        .run-details{
-           margin: 0 auto;
-        }
-        .run-title{
-            margin-left: 20px;
-        }
-        .run-btn{
-          margin-left: 15px;
-            padding: 16px 140px;
-            
+    .run-container{
+        flex-direction: column;
+        /* margin-left: 5px; */
+    }
+    .run-details{
+        margin: 0 auto;
+    }
+    .run-title{
+        margin-left: 20px;
+    }
+    .run-btn{
+        margin-left: 15px;
+        padding: 16px 140px;
+    }
+    .run-description{
+        text-align: start;
+        width: 280px;
+        margin-left: 20px;
+    }
+    .team-photos{
+    grid-template-columns: 1fr;
+    }
+    .full-calculator{
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
 
-        }
-        .run-description{
-            text-align: start;
-            width: 280px;
-            margin-left: 20px;
-        }
+    .calculator-container{
+        flex-direction: column;
+    }
+    footer{
+        /* margin-left: 35px; */
+    }
+    .footer-container{
+        flex-direction: column;
+        padding-left: 20px;
+    }
+    .foot-descrip{
+        margin-bottom: 30px;
+    }
 
     
 }
