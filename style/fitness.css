@@ -17,10 +17,7 @@
 body{
     background-color: black;
 }
-header{
-    max-width: 1060px;
-    margin: 0 auto;
-}
+
 main section{
     max-width: 1040px;
 }
@@ -34,9 +31,17 @@ main section{
 .description-color{
     color: rgba(255, 255, 255, 0.5);
 }
+/* header styles */
+header{
+    background-image: linear-gradient(180.00deg, rgba(0,0,0,1), rgba(0,0,0,.7), rgba(0,0,0,.7), rgba(0,0,0,.7),rgba(0,0,0,1) 100%) ;
+    padding-top: 60px;
+}
 
 /* navbar related styles */
-
+.navbar, .banner-section{
+    max-width: 1060px;
+    margin: 0 auto; 
+}
 .nav-title{
     font-size: 2.25rem;
     font-weight:800;
@@ -46,7 +51,6 @@ main section{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 60px;
     margin-bottom: 32px;
 }
 .nav-btn{
@@ -90,6 +94,11 @@ main section{
     margin-bottom: 28px;
     line-height: 120%;
 }
+#shape{
+    font-family: Miama;
+    /* font-size: 4.875; */
+    line-height: 120%;
+}
 .banner-description{
     color: rgba(255, 255, 255, 0.5);
     font-size: 1rem;
@@ -112,28 +121,58 @@ main section{
 }
 .banner-img{
     width: 35%;
-    border: 2px solid white;
+    /* border: 2px solid white; */
 }
 #banner-card-1{
-    width: 200px;
-    height: 90px;
-    background-color: rgba(255, 255, 255, 0.1);
+    width: 150px;
+    height: 60px;
+    background-color: rgba(255, 255, 255, 0.196);
     border-radius: 12px;
-    border:2px solid white;
+    /* border:2px solid white; */
     position: absolute;
     top: 140px;
-    right: 40px;
+    right: -75px;
+    padding: 15px;
 }   
-
+.card1-title{
+    color: aliceblue;
+    font-size: 36px;
+    font-weight:bold;
+}
+.card1-para{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 1rem;
+    line-height: 24px;
+}
 #banner-card-2{
     width: 190px;
     height: 95px;
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: rgba(255, 255, 255, 0.101);
     border-radius: 12px;
-    border:2px solid white;
+    /* border:2px solid white; */
     position: absolute;
-    bottom: 60px;
-    right: 350px;
+    bottom: 63px;
+    right: 252px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.card-round-shape{
+    background-color: #E6533C;
+    border-radius: 50%;
+    border: none;
+    padding: 18px;
+}
+.card2-title{
+    color: aliceblue;
+    font-size: 24px;
+    font-weight: 700;
+}
+.card2-para{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 16px;
+    margin-top: 8px;
 }
 /* habit related styles  */
 .habit-section{
@@ -276,6 +315,7 @@ td{
 }
 .calculator-section{
     max-width: none;
+    
    
 }
 .calculator-title{
@@ -289,6 +329,7 @@ td{
    margin: 0 auto;
    justify-content: center;
    gap: 175px;
+   background-color: #222222;
    
 }
 .form{
@@ -312,7 +353,7 @@ td{
     border: none;
     font-size: 1rem;
     line-height: 22px;
-    width: 92.5%;
+    /* width: 92.5%; */
 }
 .item-1{
     padding: 13px 20px;
@@ -322,7 +363,7 @@ td{
     border: none;
     font-size: 1rem;
     line-height: 22px;
-    width: 85%;
+    /* width: 85%; */
 }
 
 /* our team related styles */
@@ -341,12 +382,18 @@ td{
 .team-photos{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
 
 }
+.team-card{
+    position: relative;
+    height: 300px;
+}
 .team-pic-1{
-    width: 322px;
-    height: 272px;
-   
+    /* width: 322px;
+    height: 272px; */
+   width: 100%;
+   height: 100%;
 }
 .team-title{
     color:#FFFFFF;
@@ -357,8 +404,13 @@ td{
 .tainer-name{
     /* height: 20%; */
     position: absolute;
-    left: 0;
-    bottom: 0;
+    left: 5px;
+    bottom: 10px;
+}
+.trainer{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: .875rem;
+    line-height: 24px;
 }
 /* footer related styles */
 .footer-section{
@@ -401,6 +453,11 @@ td{
 }
 .footer-list{
     margin-bottom: 20px;
+}
+hr{
+    height: 2px;
+    background-color:rgba(255, 255, 255, 0.1) ;
+    border: none;
 }
 /* responsive media query */
 @media screen and (max-width:576px){
@@ -463,6 +520,7 @@ td{
     .footer-container{
         flex-direction: column;
         padding-left: 20px;
+        width: 100%;
     }
     .foot-descrip{
         margin-bottom: 30px;
