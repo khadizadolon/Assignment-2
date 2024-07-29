@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
 .inter-font {
-  font-family: "Inter";
+  font-family:"Inter";
   font-optical-sizing: auto;
   /* font-weight: 600; */
   font-style: normal;
@@ -33,7 +33,8 @@ main section{
 }
 /* header styles */
 header{
-    background-image: linear-gradient(180.00deg, rgba(0,0,0,1), rgba(0,0,0,.7), rgba(0,0,0,.7), rgba(0,0,0,.7),rgba(0,0,0,1) 100%) ;
+    /* background-image: linear-gradient(180.00deg, rgba(0,0,0,1), rgba(0,0,0,.7), rgba(0,0,0,.7), rgba(0,0,0,.7),rgba(0,0,0,1) 100%) ; */
+    background-image: linear-gradient(rgb(17, 17, 17),rgba(78, 78, 78, 0.404),rgba(119, 119, 119, 0));
     padding-top: 60px;
 }
 
@@ -43,6 +44,7 @@ header{
     margin: 0 auto; 
 }
 .nav-title{
+    font-family:"Inter";
     font-size: 2.25rem;
     font-weight:800;
 
@@ -62,6 +64,7 @@ header{
     height: 46px;
 }
 .home-btn{
+    font-family:"Inter";
     padding: 8px 20px;
     border-radius: 46px;
     background-color:#E6533C ;
@@ -70,6 +73,7 @@ header{
     margin-left: 5px;
 }
 .btn{
+    font-family:"Inter";
     padding: 8px 20px;
     border-radius: 46px;
     background-color: transparent;
@@ -89,23 +93,28 @@ header{
     padding-top: 60px;
 }
 .banner-title{
+    font-family:"Inter";
     color: white;
     font-size: 4.75rem;
     margin-bottom: 28px;
     line-height: 120%;
 }
 #shape{
-    font-family: Miama;
-    /* font-size: 4.875; */
+    font-family: 'Miama';                    
+    font-size: 4.875rem;
+    font-weight: 400;
     line-height: 120%;
 }
 .banner-description{
+    font-family:"Inter";
     color: rgba(255, 255, 255, 0.5);
     font-size: 1rem;
     line-height: 24px;
+    margin-top: 28px;
     margin-bottom: 28px;
 }
 .primary-btn{
+    font-family:"Inter";
     color: white;
     background-color: #E6533C;
     padding: 16px 46px;
@@ -113,65 +122,77 @@ header{
     border: none;
 }
 .banner-btn{
+    font-family:"Inter";
     color: white;
     border-radius:42px ;
     background-color: transparent;
     padding: 16px 46px;
     border: 1px solid;
+    margin-left: 14px;
 }
 .banner-img{
     width: 35%;
     /* border: 2px solid white; */
 }
 #banner-card-1{
-    width: 150px;
-    height: 60px;
-    background-color: rgba(255, 255, 255, 0.196);
+    width: 130px;
+    height: 62px;
+    background-color:#3A3A3A;
     border-radius: 12px;
     /* border:2px solid white; */
     position: absolute;
     top: 140px;
     right: -75px;
-    padding: 15px;
+    /* text-align: center; */
+    padding:16px 24px ;
 }   
 .card1-title{
-    color: aliceblue;
-    font-size: 36px;
-    font-weight:bold;
+    font-family:"Inter";
+    color: #FFFFFF;
+    font-size: 2.5rem;
+    /* font-weight:bold; */
 }
 .card1-para{
+    font-family:"Inter";
     color: rgba(255, 255, 255, 0.5);
-    font-size: 1rem;
-    line-height: 24px;
+    font-size: .8125rem;
+    line-height: 20px;
 }
 #banner-card-2{
     width: 190px;
     height: 95px;
-    background-color: rgba(255, 255, 255, 0.101);
+    background-color: rgba(48, 48, 48, 0.54); 
     border-radius: 12px;
-    /* border:2px solid white; */
     position: absolute;
     bottom: 63px;
     right: 252px;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    gap: 12px;
+    backdrop-filter:blur(4px);
+    /* padding: 28px 23px; */
 }
 .card-round-shape{
+    width: 40px;
+    height: 40px;
     background-color: #E6533C;
     border-radius: 50%;
     border: none;
-    padding: 18px;
+    /* padding: 18px; */
+    /* margin-left: 23px; */
 }
 .card2-title{
-    color: aliceblue;
-    font-size: 24px;
-    font-weight: 700;
+    font-family:"Inter";
+    color: #FAFAF9;
+    font-size: 1.5rem;
+    /* font-weight: 700; */
 }
 .card2-para{
+    font-family:"Inter";
     color: rgba(255, 255, 255, 0.5);
-    font-size: 16px;
+    font-size: 1rem;
+    line-height: 24px;
     margin-top: 8px;
 }
 /* habit related styles  */
@@ -193,6 +214,7 @@ header{
     margin: 0 auto;
 }
 .habit-title{
+    font-family:"Inter";
     color: white;
     font-size: 3rem;
     line-height: 120%;
@@ -200,10 +222,12 @@ header{
     margin-bottom: 0;
 }
 .habit-description{
+    font-family:"Inter";
     color: rgba(255, 255, 255, 0.5);
     font-size: .875rem;
     line-height: 24px;
     margin-bottom: 55px;
+    margin-top: 14px;
 }
 .habit-card{
     width: 230px;
@@ -214,13 +238,16 @@ header{
     border-radius: 50%;
 }
 .card-title{
+    font-family:"Inter";
     font-size: 1.125rem;
     font-weight: 600;
     color: white;
     margin-bottom: 0;
+    margin-top: 30px;
     
 }
 .card-para{
+    font-family:"Inter";
     color: rgba(255, 255, 255, 0.5);
     width: 230px;
     font-size: .875rem;
@@ -255,6 +282,7 @@ header{
     height: 312px;
 }
 .run-title{
+    font-family:"Inter";
     color:white;
     font-size: 3rem;
     line-height: 120%;
@@ -262,12 +290,15 @@ header{
     margin-bottom: 0;
 }
 .run-description{
+    font-family:"Inter";
     color: rgba(255, 255, 255, 0.5);
     font-size: .875rem;
     line-height: 24px;
     margin-bottom: 34px;
+    margin-top: 14px;
 }
 .run-btn{
+    font-family:"Inter";
     padding: 16px 70px;
 
 }
@@ -276,10 +307,15 @@ header{
    width: 100%;
    height: 100%;
    border-radius: 18px;
+   /* object-fit: cover; */
 
 }
 /* Calculator related styles */
+.calculator-section{
+    max-width: none;
+}
 .calculator-heading{
+    font-family:"Inter";
     width: 670px;
     margin: 0 auto;
     margin-top: 90px;
@@ -299,6 +335,7 @@ th, td{
     border:1px solid  rgba(255, 255, 255, 0.1);
 }
 th{
+    font-family:"Inter";
     text-align: start;
     padding: 15px 19px;
     color: #FFFFFF;
@@ -308,21 +345,19 @@ th{
 }
 td{
     padding-left: 20px;
-    color: rgba(82, 82, 82, 1);
+    /* color: rgba(82, 82, 82, 1); */
+    color:rgba(145, 145, 145, 1);
     text-align: start;
     font-size: 0.875rem;
     line-height: 120%;
 }
-.calculator-section{
-    max-width: none;
-    
-   
-}
+
 .calculator-title{
-  font-size: 1.75rem;
-  color: #FFFFFF;
-  line-height: 120%;
-  margin-bottom: 14px;
+    font-family:"Inter";
+    font-size: 1.75rem;
+    color: #FFFFFF;
+    line-height: 120%;
+    margin-bottom: 14px;
 }
 .calculator-container{
    display: flex;
@@ -334,7 +369,6 @@ td{
 }
 .form{
     /* width: 580px; */
-    /* border: 2px solid thistle; */
     margin:50px;
 }
 .form-items{
@@ -343,27 +377,40 @@ td{
     gap: 12px;
     margin-top: 34px;
 }
-#form-item-5{
-    grid-column: span 2;
-    padding: 13px 20px;
-    border-radius: 8px;
-    color:  rgba(255, 255, 255, 0.6);
-    /* color: rgba(56, 56, 56, 1); */
-    background-color: rgba(255, 255, 255, 0.1);
-    border: none;
-    font-size: 1rem;
-    line-height: 22px;
-    /* width: 92.5%; */
-}
+
 .item-1{
     padding: 13px 20px;
     border-radius: 8px;
-    color: rgba(255, 255, 255, 0.6);
-    background-color: rgba(255, 255, 255, 0.1);
+    color: #666666;
+     background-color: rgba(56, 56, 56, 1);
     border: none;
     font-size: 1rem;
     line-height: 22px;
-    /* width: 85%; */
+    width: 85%;
+}
+#item-4{
+    padding: 13px 20px;
+    border-radius: 8px;
+    color: #666666;
+    background-color: rgba(56, 56, 56, 1);
+    border: none;
+    font-size: 1rem;
+    line-height: 22px;
+    width: 100%;
+}
+.select-div{
+    display: grid;
+    grid-column: span 2;
+}
+#item-5{
+    padding: 13px 20px;
+    border-radius: 8px;
+    color:#666666;
+    background-color: rgba(56, 56, 56, 1);
+    border: none;
+    font-size: 1rem;
+    line-height: 22px;
+    /* width: 205%; */
 }
 
 /* our team related styles */
@@ -371,9 +418,12 @@ td{
     margin: 0 auto;
     margin-top: 90px;
 }
+.team-para{
+    margin-top: 15px;
+}
 
 .team-container{
-    border: 2px solid red;
+    /* border: 2px solid red; */
     
 }
 .team-details{
@@ -383,11 +433,22 @@ td{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
+    /* border: 2px solid white; */
+    padding: 20px;
+    background-color:#222222ac;
+    border-radius: 18px;
 
 }
 .team-card{
     position: relative;
-    height: 300px;
+    height: 272px;
+   
+}
+.bg-overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color:rgba(0, 0, 0, 0.2);
 }
 .team-pic-1{
     /* width: 322px;
@@ -396,6 +457,7 @@ td{
    height: 100%;
 }
 .team-title{
+    font-family:"Inter";
     color:#FFFFFF;
     font-size: 1.25rem;
     line-height: 120%;
@@ -404,8 +466,9 @@ td{
 .tainer-name{
     /* height: 20%; */
     position: absolute;
-    left: 5px;
-    bottom: 10px;
+    
+    left: 20px;
+    bottom: 16px;
 }
 .trainer{
     color: rgba(255, 255, 255, 0.5);
@@ -428,16 +491,19 @@ td{
     margin-bottom: 60px;
 }
 .brand{
+    font-family:"Inter";
     font-size: 4.375rem;
     font-weight: 800;
     line-height: 120%;
     margin-bottom: 20px;
 }
 .foot-descrip{
+    font-family:"Inter";
     font-size: 0.875rem;
     line-height: 24px;
 }
 .footer-title{
+    font-family:"Inter";
     color: #FFFFFF;
     margin-bottom: 30px;
     font-family: "Inter";
@@ -446,6 +512,7 @@ td{
     line-height: 120%;
 }
 .footer-para{
+    font-family:"Inter";
     text-align: center;
     font-size: 1.25rem;
     margin-top: 36px;
@@ -467,6 +534,9 @@ hr{
     }
     .banner-section{
         flex-direction: column;
+    }
+    .banner-card-1{
+        /* width: 100%; */
     }
     .habit-cards-group{
         flex-direction: column;
@@ -505,10 +575,18 @@ hr{
     .team-photos{
     grid-template-columns: 1fr;
     }
+    .form{
+        /* width: 100%; */
+        margin: 0;
+        /* padding: 43px 20px; */
+    }
     .full-calculator{
         width: 100%;
         margin-left: auto;
         margin-right: auto;
+    }
+    .calculator-heading{
+        width: 100%;
     }
 
     .calculator-container{
