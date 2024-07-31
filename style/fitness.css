@@ -124,6 +124,21 @@ header{
     padding: 16px 46px;
     border-radius: 42px;
     border: none;
+    font-size: 1.125rem;
+    font-weight: 600;
+}
+.responsive-btn{
+    font-family:"Inter";
+    color: white;
+    background-color: #E6533C;
+    padding: 16px 41px;
+    border-radius: 42px;
+    border: none;
+    font-size: 1.125rem;
+    font-weight: 600;
+    display: none;
+    line-height: 22px;
+    
 }
 .banner-btn{
     font-family:"Inter";
@@ -133,10 +148,16 @@ header{
     padding: 16px 46px;
     border: 1px solid;
     margin-left: 14px;
+    font-size: 1.125rem;
+    font-weight: 600;
 }
 .banner-img{
     width: 35%;
     /* border: 2px solid white; */
+}
+.banner-pic{
+    object-fit: contain;
+    margin-left: 30px;
 }
 #banner-card-1{
     width: 130px;
@@ -180,8 +201,7 @@ header{
     background-color: #E6533C;
     border-radius: 50%;
     border: none;
-    /* padding: 18px; */
-    /* margin-left: 23px; */
+    
 }
 .card2-title{
     font-family:"Inter";
@@ -270,7 +290,6 @@ header{
     background-color: #222222;
     border-radius: 10px;
     padding: 30px;
-    /* padding: 40px 50px; */
 }
 .run-details{
     width: 440px;
@@ -300,6 +319,12 @@ header{
 }
 .run-btn{
     font-family:"Inter";
+    color: white;
+    background-color: #E6533C;
+    border-radius: 42px;
+    border: none;
+    font-size: 1.125rem;
+    font-weight: 600;
     padding: 16px 70px;
 
 }
@@ -521,62 +546,160 @@ td{
     font-size: 1.25rem;
     margin-top: 36px;
     padding-bottom: 36px;
+    line-height: 24px;
+}
+.footer-details{
+    margin-right: 80px;
+    gap-bottom: 0;
 }
 .footer-list{
     margin-bottom: 20px;
+    font-size: 1.5rem;
+    line-height: 120%;
 }
 hr{
     height: 2px;
     background-color:rgba(255, 255, 255, 0.1) ;
     border: none;
+    width: 70%;
+    margin: 0 auto
 }
 /* responsive media query */
 @media screen and (max-width:576px){
+    header{
+        padding-top: 50px;
+    }
     .navbar,.banner-section{
         width: 100%;
     }
 
     .nav-container{
-        flex-direction: column;
+        padding: 0 20px;
+        margin-bottom: 50px;
     }
     .nav-btn{
         display: none;
     }
+    .hamburger{
+        display: block;
+    }
+    /* responsive banner section */
     .banner-section{
         flex-direction: column;
     }
-    .banner-card-1{
-        left: -75px;
+    .banner-details{
+        width: 90%;
+        padding: 0 20px;
+    }
+    .banner-title{
+        font-size: 2.25rem;
+        width: 65%;
+    }
+    #shape{
+        font-size: 2.25rem;
+    }
+    .banner-description{
+        width: 70%;
+    }
+    .primary-btn{
+        display: none;
+    }
+    .banner-btn{
+        padding: 16px 21px;
+    }
+    .responsive-btn{
+        display: inline;
+        
+    }
+    .banner-img{
+        width: 90%;
+        padding: 0 20px;
+        margin-top: 48px;
+    }
+    #banner-card-1{
+        width: 105px;
+        height: 50px;
+        right: 73px;
+        top: 450px;
+        padding: 12px 18px;
+        border: .5px solid rgba(255, 255, 255, 0.1);
+        
+    }
+    .card1-title{
+        font-size: 1.875rem;
+
+    }
+    .card1-para{
+        font-size: 0.625rem;
+    }
+    #banner-card-2{
+        bottom: 243px;
+        left: 30px;
+        height: 75px;
+        width: 157px;
+        border: .5px solid rgba(255, 255, 255, 0.1);
+        
+    }
+    .card2-title{
+        font-size: 1.125rem;
+    }
+    .card2-para{
+        font-size: .75rem;
+    }
+    .card-round-shape{
+        width: 30px;
+        height: 30px;
+        /* margin-left: 17px; */
+    }
+    .banner-pic{
+        margin: 0;
+    }
+    /* responsive habit section */
+    .habit-section{
+        margin-top: 0;
+    }
+    .habit-container{
+        padding: 0 28px;
+    }
+    .habit-title{
+        text-align: center;
+        font-size: 1.875rem;
+    }
+    .habit-details{
+        text-align: justify;
+    }
+    .habit-description br{
+        display: none;
+    }
+    .habit-description{
+        width: 95%;
+        margin: 14px 11px 58px;
+        text-align:center;
     }
     .habit-cards-group{
         flex-direction: column;
-            /* align-items: center; */
-            /* margin: 0 auto; */
     }
-       
-    .habit-title{
-        text-align: center;
-    }
-    .habit-description{
-        width: 318px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
+    /* responsive run section*/
     .run-container{
         flex-direction: column;
-        /* margin-left: 5px; */
+        margin: 0 20px;
+        /* padding: 32px 33px; */
     }
     .run-details{
         margin: 0 auto;
         width: 100%;
+        padding: 10px 10px;
     }
     .run-title{
-        margin-left: 20px;
+    
     }
     .run-btn{
-        margin-left: 15px;
-        padding: 16px 140px;
+       
+    }
+    .run-image{
+        width: 95%;
+        height: 70%;
+       
     }
     .run-description{
         text-align: start;
@@ -603,19 +726,37 @@ hr{
     .calculator-container{
         flex-direction: column;
     }
-    footer{
-        /* margin-left: 35px; */
+    /* responsive footer section */
+    .footer-section{
+       width: 100%;
+       padding-top: 44px;
     }
     .footer-container{
+        /* width: 100%; */
         flex-direction: column;
-        padding-left: 20px;
-        width: 100%;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .foot-descrip br{
+        display: none;
     }
     .foot-descrip{
         margin-bottom: 30px;
+        text-align: start;
     }
     .footer-content{
-        width: 100%;
+        width: 75%;
+        /* margin-left: 20px; */
+    }
+    .footer-title{
+        margin-bottom: 40px;
+    }
+    .footer-para{
+        text-align: start;
+        margin-left: 20px;
+    }
+    hr{
+        width: 90%;
     }
 
     
