@@ -350,6 +350,29 @@ header{
     margin: 0 auto;
     margin-top: 90px;
 }
+.bmi-title{
+    font-family:"Inter";
+    color: white;
+    font-size: 3rem;
+    line-height: 120%;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.calculate-para{
+    font-family:"Inter";
+    color: rgba(255, 255, 255, 0.5);
+    font-size: .875rem;
+    line-height: 24px;
+    margin-bottom: 90px;
+    margin-top: 14px;
+}
+.bmi-chart{
+    font-family:"Inter";
+    font-size: 1.75rem;
+    color: #FFFFFF;
+    line-height: 120%;
+    margin-bottom: 14px;
+}
 .table{
     /* width: 400px; */
     /* height: 300px; */
@@ -703,6 +726,7 @@ hr{
     /* responsive run section*/
     .run-section{
         width: 100%;
+        margin-top: 66px;
     }
     .run-container{
         flex-direction: column;
@@ -743,40 +767,66 @@ hr{
     }
    
     /* responsive calculator section */
-    .form{
-        /* width: 100%; */
-        /* margin: 0; */
-        /* padding: 43px 20px; */
-    }
-    .full-calculator{
+    .calculator-section{
         width: 100%;
-        margin-left: auto;
-        margin-right: auto;
     }
+   
     .calculator-heading{
-        width: 100%;
+        width: 90%;
         text-align: start;
+        /* padding: 0 20px; */
+        margin: 66px 20px 32px;
+    }
+    .bmi-title{
+        font-size: 2rem;
+    }
+    .calculate-para{
+        margin-bottom: 32px;
+        width: 80%;
     }
 
     .calculator-container{
         flex-direction: column;
         gap: 0;
-        padding: 0 20px;
+       
     }
     .form{
         margin: 0;
     }
     .bmi-form{
         width: 90%;
+        padding: 0 20px;
     }
-    .normal-input{
-        width: 100%;
-        /* padding: 13px 20px 71px ; */
+    .bmi-chart,.calculator-title{
+        font-size: 1rem;
     }
+    .bmi-chart{
+        margin-bottom: 0;
+    }
+    table{
+        margin-top: 23px;
+    }
+    .table{
+        margin-top: 34px;
+        padding: 0 20px;
+    }
+    .calculator-details{
+        padding: 0 20px;
+        margin-top: 42px;
+    }
+    .calculate-btn{
+        margin-left: 20px;
+        margin-bottom: 42px;
+    }
+    
     /* responsive team section */
+    .team{
+        margin-top: 0;
+    }
     .team-details{
         margin: 0 42px;
         margin-bottom: 37px;
+        margin-top: 66px;
     }
     .team-para{
         margin-bottom: 0;
@@ -795,6 +845,7 @@ hr{
     .footer-section{
        width: 100%;
        padding-top: 44px;
+       margin-top: 66px;
     }
     .footer-container{
         /* width: 100%; */
