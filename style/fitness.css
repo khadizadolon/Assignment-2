@@ -382,12 +382,25 @@ td{
     line-height: 120%;
 }
 
+
+.form{
+    /* width: 580px; */
+    margin:50px;
+}
 .calculator-title{
     font-family:"Inter";
     font-size: 1.75rem;
     color: #FFFFFF;
     line-height: 120%;
     margin-bottom: 14px;
+}
+.calculator-description{
+    font-family:"Inter";
+    color: rgba(255, 255, 255, 0.5);
+    font-size: .875rem;
+    line-height: 24px;
+    margin-bottom: 34px;
+    margin-top: 14px;
 }
 .calculator-container{
    display: flex;
@@ -397,50 +410,37 @@ td{
    background-color: #222222;
    
 }
-.form{
-    /* width: 580px; */
-    margin:50px;
-}
-.form-items{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 12px;
-    margin-top: 34px;
-}
 
-.item-1{
-    padding: 13px 20px;
-    border-radius: 8px;
-    color: #666666;
-     background-color: rgba(56, 56, 56, 1);
-    border: none;
-    font-size: 1rem;
-    line-height: 22px;
-    width: 85%;
-}
-#item-4{
-    padding: 13px 20px;
-    border-radius: 8px;
-    color: #666666;
-    background-color: rgba(56, 56, 56, 1);
-    border: none;
-    font-size: 1rem;
-    line-height: 22px;
-    width: 100%;
-}
-.select-div{
+.bmi-form {
     display: grid;
-    grid-column: span 2;
-}
-#item-5{
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+  
+  .bmi-form input,
+  .bmi-form select {
+    width: 100%;
+    box-sizing: border-box;
     padding: 13px 20px;
     border-radius: 8px;
-    color:#666666;
+    color: #666666;
     background-color: rgba(56, 56, 56, 1);
     border: none;
     font-size: 1rem;
     line-height: 22px;
-}
+  }
+  
+  .bmi-form .normal-input,
+  .bmi-form #sex {
+    grid-column: span 1;
+  }
+  
+  .bmi-form #factor {
+    grid-column: span 2;
+  }
+  #sex , #factor{
+    Border-right: 20px solid transparent;
+  }
 .calculate-btn {
     font-family:"Inter";
     color: white;
@@ -760,6 +760,18 @@ hr{
 
     .calculator-container{
         flex-direction: column;
+        gap: 0;
+        padding: 0 20px;
+    }
+    .form{
+        margin: 0;
+    }
+    .bmi-form{
+        width: 90%;
+    }
+    .normal-input{
+        width: 100%;
+        /* padding: 13px 20px 71px ; */
     }
     /* responsive team section */
     .team-details{

@@ -178,61 +178,53 @@
           <div class="form">
             <div>
               <h4 class="calculator-title">Calculate your BMI</h4>
-              <p style="margin-bottom: 0px" class="habit-description">
+              <p class="calculator-description">
                 We believe fitness should be accessible to everyone, everywhere,
                 regardless of <br />
                 income or access to a gym.
               </p>
             </div>
-            <form class="form-items" action="">
-              <div>
-                <input
-                  class="item-1"
-                  type="text"
-                  name=""
-                  id=""
-                  placeholder="Height/cm"
-                />
-              </div>
-              <div>
-                <input
-                  class="item-1"
-                  type="text"
-                  name=""
-                  id=""
-                  placeholder="Weight/kg"
-                />
-              </div>
-              <div>
-                <input
-                  class="item-1"
-                  type="text"
-                  name=""
-                  id=""
-                  placeholder="Age"
-                />
-              </div>
 
-              <div>
-                <label for="select-item1"></label>
-                <select name="select-item1" id="item-4">
-                  <option value="sex">Sex</option>
-                  <option value="Select an activity factor">
-                    Select an activity factor
-                  </option>
-                </select>
-              </div>
-                <div class="select-div">
-                  <label for="select-item2"></label>
-                  <select name="select-item2" id="item-5">
-                    <option value="Select an activity factor">
-                      Select an activity factor
-                    </option>
-                    <option value="Select an activity factor">
-                      Select an activity factor
-                    </option>
-                  </select>
-                </div>
+            <form class="bmi-form" action="">
+              <input
+                type="text"
+                name=""
+                id=""
+                class="normal-input"
+                placeholder="Height/cm"
+              />
+
+              <input
+                type="text"
+                name=""
+                id=""
+                class="normal-input"
+                placeholder="Weight/kg"
+              />
+
+              <input
+                type="text"
+                name=""
+                id=""
+                class="normal-input"
+                placeholder="Age"
+              />
+
+              <select name="select-item1" id="sex">
+                <option value="sex">Sex</option>
+                <option value="Select an activity factor">
+                  Select an activity factor
+                </option>
+              </select>
+
+              <select name="select-item2" id="factor">
+                <option value="Select an activity factor">
+                  Select an activity factor
+                </option>
+                <option value="Select an activity factor">
+                  Select an activity factor
+                </option>
+              </select>
             </form>
             <button class="calculate-btn">
               Calculate
