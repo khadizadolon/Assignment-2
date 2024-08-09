@@ -204,6 +204,10 @@ header{
     border: none;
     
 }
+#play-button{
+    color: #FAFAF9;
+    display: none;
+}
 .card2-title{
     font-family:"Inter";
     color: #FAFAF9;
@@ -563,10 +567,8 @@ td{
     line-height: 120%;
     
 }
-.tainer-name{
-    /* height: 20%; */
+.trainer-name{
     position: absolute;
-    
     left: 20px;
     bottom: 16px;
 }
@@ -582,7 +584,6 @@ td{
 .footer-section{
     background-color: #222222;
     margin-top: 90px;
-    /* height: 490px; */
     padding-top: 66px;
     
 }
@@ -731,8 +732,14 @@ hr{
     .card-round-shape{
         width: 30px;
         height: 30px;
-        /* margin-left: 17px; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
+    #play-button{
+        display: block;
+    }
+    
     .banner-pic{
         margin: 0;
     }
@@ -746,9 +753,6 @@ hr{
         margin-top: 66px;
         margin-bottom: 50px;
     }  
-    .activity-title{
-        /* margin-bottom: 10px; */
-    }
     .activity-para{
         margin-bottom: 5px;
     }
@@ -931,6 +935,9 @@ hr{
     hr{
         width: 90%;
     }
+    .foot-inform{
+        grid-template-columns: 1fr;
+    }
 }
 
 @media screen and (min-width:576px) and (max-width:992px){
@@ -978,8 +985,7 @@ hr{
     .habit-cards-group{
         display: grid;
         grid-template-columns: 1fr 1fr;
-        /* width: 80%; */
-        /* margin: 0 auto; */
+        
     }
     .habit-container{
         margin: 0 88px;
